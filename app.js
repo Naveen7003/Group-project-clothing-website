@@ -26,7 +26,7 @@ app.use(
 app.use(cookieparser());
 
 //base route or entry route of user file
-app.use("/", require("./routes/userRouter"))
+app.use("/user", require("./routes/userRouter"))
 
 //base route for manager
 app.use("/admin", require("./routes/adminRouter"))
